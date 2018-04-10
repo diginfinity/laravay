@@ -1,0 +1,10 @@
+<?php
+
+namespace DummyNamespace;
+
+use Laravay\Models\LaravayPermission;
+
+class DummyClass extends LaravayPermission
+{
+    //
+}

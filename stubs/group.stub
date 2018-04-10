@@ -1,0 +1,10 @@
+<?php
+
+namespace DummyNamespace;
+
+use Laravay\Models\LaravayGroup;
+
+class DummyClass extends LaravayGroup
+{
+    //
+}
