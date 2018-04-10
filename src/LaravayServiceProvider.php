@@ -181,7 +181,7 @@ class LaravayServiceProvider extends ServiceProvider
 
     protected function registerSetupGroupsCommand()
     {
-        $this->app->singleton('command.laravay.setup-teams', function () {
+        $this->app->singleton('command.laravay.setup-groups', function () {
             return new \Laravay\Commands\SetupGroupsCommand();
         });
     }
