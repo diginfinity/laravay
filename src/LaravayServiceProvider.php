@@ -51,7 +51,7 @@ class LaravayServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__.'/../config/laravay.php', 'laravay');
 
         $this->publishes([
-            __DIR__.'/../config/laratrust.php' => config_path('laravay.php'),
+            __DIR__.'/../config/laravay.php' => config_path('laravay.php'),
             __DIR__. '/../config/laravay_seeder.php' => config_path('laravay_seeder.php'),
         ], 'laravay');
 

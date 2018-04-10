@@ -231,7 +231,7 @@ trait LaravayUserTrait
             }
         }
         foreach ($this->cachedRoles() as $role) {
-            $role = LaravayHelper::hidrateModel(Config::get('laratrust.models.role'), $role);
+            $role = LaravayHelper::hidrateModel('App\Role', $role);
             if (LaravayHelper::isInSameGroup($role, $team) && $role->hasPermission($permission)) {
                 return true;
             }

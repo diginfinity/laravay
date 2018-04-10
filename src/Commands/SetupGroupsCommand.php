@@ -56,7 +56,7 @@ class SetupGroupsCommand extends Command
             );
         }
         $this->line('Creating Group model');
-        $this->call('laratrust:group');
+        $this->call('laravay:group');
         $this->line('');
     }
     /**
@@ -69,7 +69,7 @@ class SetupGroupsCommand extends Command
         $migrationPath = $this->getMigrationPath();
         $this->call('view:clear');
         $output = $this->laravel->view
-            ->make('laratrust::setup-groups')
+            ->make('laravay::setup-groups')
             ->with(['laravay' => Config::get('laravay')])
             ->render();
         if (!file_exists($migrationPath) && $fs = fopen($migrationPath, 'x')) {
