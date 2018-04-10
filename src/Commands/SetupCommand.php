@@ -1,5 +1,5 @@
 <?php
-namespace Laravay\Setup;
+namespace Laravay\Commands;
 
 
 use Illuminate\Console\Command;
